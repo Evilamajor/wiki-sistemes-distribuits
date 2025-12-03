@@ -1,0 +1,14 @@
+# Zettlr / editor
+*.swp
+*.swo
+.DS_Store
+
+# Python / Java / build artefacts
+__pycache__/
+*.class
+target/
+bin/
+
+# Misc
+.vscode/
+.idea/
