@@ -1,0 +1,25 @@
+{
+    "name": "Wiki Sistemes Distribuïts",
+    "image": "mcr.microsoft.com/devcontainers/java:17",
+    "features": {
+        "ghcr.io/devcontainers/features/python:1": {},
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "username": "vscode",
+            "installZsh": "true",
+            "upgradePackages": "true"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "redhat.java",
+                "vscjava.vscode-maven",
+                "GitHub.copilot",
+                "GitHub.copilot-chat",
+                "yzhang.markdown-all-in-one"
+            ]
+        }
+    },
+    "postCreateCommand": "pip install --upgrade pip"
+}
