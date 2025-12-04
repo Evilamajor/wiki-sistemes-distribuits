@@ -1,75 +1,26 @@
-# Estructura del repositori “wiki-sistemes-distribuits”
+# Estructura del repositori
 
-Aquest document descriu l’estructura global del repositori, la funció de cada carpeta i les millors pràctiques per mantenir-lo organitzat i fàcil de navegar.
+Guia ràpida de la disposició de carpetes i fitxers per mantenir els apunts organitzats.
 
----
+## Carpeta arrel
+- `README.md`: resum del projecte i enllaç a les carpetes principals.
+- `.git/`: metadades de git (no s'edita manualment).
 
-## 📁 Carpetes principals
+## notes/
+Apunts i resums del curs. Cada mòdul disposa de la seva carpeta amb fitxers Markdown.
+- `notes/README.md`: índex amb enllaços a cada mòdul i recomanacions per afegir nous apunts.
+- `notes/0X_*`: carpetes numerades per mòdul (introducció, comunicació, consistència, etc.).
 
-### `notes/`
-Conté tots els apunts teòrics en format Markdown organitzats per mòduls.  
-Els subdirectoris segueixen l’ordre del curs i dels temes estudiats:
+## codes/
+Exemples de codi, simuladors i snippets relacionats amb els continguts del curs.
+- `codes/README.md`: descriu què s'hi pot trobar (Lamport, rellotges vectorials, TSAE...).
+- Subcarpetes opcionals per agrupar experiments o llibreries específiques.
 
-- `00_introduccio/` – definició i propietats bàsiques dels sistemes distribuïts.  
-- `01_comunicacio/` – models de comunicació, sincronia/asincronia, middleware, acoblament.  
-- `02_consistencia/` – consistència forta, eventual, rellotges de Lamport i vectorials.  
-- `03_TSAE/` – fases del protocol TSAE, logs, vector clocks, purga de missatges, experiències.  
-- `04_models/` – arquitectures i models de sistemes distribuïts (Chord, Spanner, hashing consistent...).  
-- `05_aplicacions/` – plataformes com Kafka, RabbitMQ, DynamoDB i Cassandra.  
-- `06_referencia/` – documents d’ús intern: glossari, llibre d’estil, estructura del repo, ordres git, etc.
+## results/
+Sortides, logs i resultats generats quan s'executen els experiments o simulacions.
+- `results/README.md`: explica l'objectiu de la carpeta i què s'hi hauria de guardar.
 
----
-
-### `codes/`
-Inclou codi font de simuladors i exemples:
-
-- Rellotges de Lamport  
-- Vector clocks  
-- Protocol TSAE (fases 1–4)  
-- Experiments, scripts i utilitats d’estudi  
-
-Cada subcarpeta hauria de tenir un `README.md` curt explicant l’objectiu del codi.
-
----
-
-### `results/`
-Resultats d’execució del codi i experiments:
-
-- logs  
-- sortides de programes  
-- comparatives  
-- anotacions dels experiments estudiats  
-
----
-
-## 📐 Bones pràctiques de nomenclatura (naming)
-
-- Fitxers Markdown → minúscules + guions baixos  
-  Exemple: `consistencia_eventual.md`  
-- Carpetes → `NN_tema/` on NN és ordre seqüencial  
-  Exemple: `02_consistencia/`
-- Fitxers de referència → dins `06_referencia/`
-
----
-
-## 🔄 Manteniment de l’índex
-
-Quan s’afegeixi un nou apunt:
-
-1. Crear el fitxer dins la carpeta adequada  
-2. Afegir-lo a `notes/README.md`  
-3. Actualitzar aquest document si s’afegeix una nova carpeta o tema  
-
----
-
-## 🧩 Filosofia d’organització
-
-Aquest repositori funciona com un “wiki de sistemes distribuïts” amb objectius:
-
-- Estudi personal aprofundit  
-- Base de coneixement reutilitzable  
-- Suport directe per al TFG  
-- Exercici de documentació tècnica i estructura professional
-
-Es recomana mantenir-lo modular, ordenat, i fàcil d’ampliar.
-
+## Bones pràctiques
+- Usa noms de fitxer en minúscules i amb guions baixos per facilitar la lectura.
+- Mantén els índexs (`README.md`) actualitzats quan s'afegeixin nous materials.
+- Col·loca el codi i els resultats a les carpetes corresponents per mantenir la separació entre teoria i experiments.
