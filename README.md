@@ -2,7 +2,7 @@
 
 Personal study repo for the UOC "Sistemes Distribuïts" course.
 
-- `notes/` – Zettlr markdown notes (vegeu `notes/README.md` per a l'índex i l'estructura).
-- `codes/` – Code examples and simulators (Lamport, vector clocks, TSAE...).
-- `results/` – Logs and experiment results.
+- [`notes/`](notes/README.md) – Zettlr markdown notes (vegeu l'índex i l'estructura).
+- [`codes/`](codes/) – Code examples and simulators (Lamport, vector clocks, TSAE...).
+- [`results/`](results/) – Logs and experiment results.
 
